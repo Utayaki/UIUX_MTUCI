@@ -66,21 +66,21 @@ export const List = styled.div`
   align-self: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  border-top: 1px solid ${(props) => props.theme.accentColor1};
-  border-bottom: 1px solid ${(props) => props.theme.accentColor1};
+  border-top: 1px solid ${(props) => props.theme.accentColor2};
+  border-bottom: 1px solid ${(props) => props.theme.accentColor2};
   padding: 20px 0px;
   box-sizing: border-box;
   @media (min-width: 1200px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   @media (max-width: 1200px) and (min-width: 992px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   @media (max-width: 992px) and (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   @media (max-width: 768px) and (min-width: 576px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   @media (max-width: 576px) {
     grid-template-columns: 1fr 1fr;
