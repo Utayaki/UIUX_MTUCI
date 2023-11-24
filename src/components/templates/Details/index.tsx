@@ -14,7 +14,7 @@ import { BiTimeFive } from "react-icons/bi";
 const Details = () => {
   const router = useRouter();
   const { filmRetrieve, isLoading } = useFilmRetrieve(
-    (router.query.id as string) || ""
+    (router.query.id as string) || "",
   );
 
   if (isLoading) {

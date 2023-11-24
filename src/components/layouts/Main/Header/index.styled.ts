@@ -59,7 +59,7 @@ export const Logo = styled.div`
 export const Img = styled.img`
   display: flex;
   align-items: center;
-  height: 330px;
+  height: 230px;
 `;
 export const Name = styled.span`
   display: flex;
