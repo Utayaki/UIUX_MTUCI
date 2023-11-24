@@ -8,15 +8,15 @@ type HeaderProps = {
 };
 const Header: React.FC<HeaderProps> = (props) => {
   return (
-    <Style.Header id="header">
+    <Style.Header id="header" style={{ textAlign: "center" }}>
       <Style.Content>
         <Style.Logo>
-          <Style.Img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Gregory_and_watermelon.jpg"
-            style={{ width: "500px", height: "250px" }}
-          ></Style.Img>
-          <Style.Name>Big Floppa's Favorite Films Collection</Style.Name>
+          <Style.Img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Gregory_and_watermelon.jpg"></Style.Img>
         </Style.Logo>
+
+        <Style.Name style={{ textAlign: "center" }}>
+          {" Big Floppa's Favorite Films Collection"}
+        </Style.Name>
 
         <Style.Buttons>
           <Button
