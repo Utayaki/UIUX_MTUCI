@@ -1,10 +1,18 @@
 import { MovieList } from "@/lib/api";
 import Link from "next/link";
 import React from "react";
-import { VscStarFull } from "react-icons/vsc";
+import { VscStarFull, VscStarHalf } from "react-icons/vsc";
 import * as Style from "./index.styled";
 
 const Film: React.FC<MovieList> = (props) => {
+  const stars = [];
+  for (let i = 0; i < Math.floor(props.rating); i++) {
+    stars.push(<VscStarFull key={i} />);
+  }
+  if (Math.round(props.rating) > Math.floor(props.rating)) {
+    stars.push(<VscStarHalf key={props.rating} />);
+  }
+
   return (
     <Style.Film>
       <Link href={`/films/${props.id}`}>
@@ -21,9 +29,7 @@ const Film: React.FC<MovieList> = (props) => {
 
             <Style.Card2>
               <Style.Rating>
-                <Style.RatingIcon>
-                  <VscStarFull />
-                </Style.RatingIcon>
+                <Style.RatingIcon>{stars}</Style.RatingIcon>
                 <Style.RatingText> {props.rating} / 10</Style.RatingText>
               </Style.Rating>
 
