@@ -9,6 +9,7 @@ export const Header = styled.header`
   color: ${(props) => props.theme.textColor};
   box-shadow: 0px 0px 5px ${(props) => props.theme.accentColor1};
   background-color: ${(props) => props.theme.backgroundColor};
+  background-image: url(https://wallpapers.com/images/hd/pastel-cute-background-gnzi7pcq1sm9vpxk.jpg);
   top: 0;
   position: sticky;
   overflow: hidden;
@@ -29,6 +30,7 @@ export const Content = styled.div`
   padding: 0px 20px;
   background-color: ${(props) => props.theme.backgroundColor};
   box-sizing: border-box;
+  border-radius: 15px; /* Add this line to create curly corners */
 
   @media (min-width: 1200px) {
     width: 1200px;

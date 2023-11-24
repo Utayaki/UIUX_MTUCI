@@ -74,7 +74,9 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     background-color: ${(props) => props.theme.backgroundColor};
+    background-image: url(https://wallpapers.com/images/hd/pastel-cute-background-gnzi7pcq1sm9vpxk.jpg);
     transition: 0.1s;
+    background-position: center;
     color: ${(props) => props.theme.textColor};
   }
 `;
