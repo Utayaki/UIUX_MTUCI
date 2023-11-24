@@ -11,8 +11,11 @@ const Header: React.FC<HeaderProps> = (props) => {
     <Style.Header id="header">
       <Style.Content>
         <Style.Logo>
-          <Style.Img src="https://yts.mx/assets/images/website/logo-YTS.svg"></Style.Img>
-          <Style.Name>HD movies at the smallest file size.</Style.Name>
+          <Style.Img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Gregory_and_watermelon.jpg"
+            style={{ width: "500px", height: "250px" }}
+          ></Style.Img>
+          <Style.Name>Big Floppa's Favorite Films Collection</Style.Name>
         </Style.Logo>
 
         <Style.Buttons>
