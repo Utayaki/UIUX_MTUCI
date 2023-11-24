@@ -42,6 +42,7 @@ export const lightTheme = {
   shadowColor: "rgba(0,0,0,0.2)",
 
   textSizeTitle: "25px",
+  textSizeTitle100: "8px",
   textSizeTitle900: "22px",
   textSizeTitle700: "22px",
   textSizeTitle500: "22px",
