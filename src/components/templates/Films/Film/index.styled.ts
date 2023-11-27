@@ -35,7 +35,7 @@ export const RatingIcon = styled.div`
   align-items: center;
   justify-content: center;
   margin: 10px;
-  color: ${(props) => props.theme.accentColor1};
+  color: ${(props) => props.theme.ratingIconColor};
   font-size: ${(props) => props.theme.textSizeTitle};
 `;
 export const RatingText = styled.div`

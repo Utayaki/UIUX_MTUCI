@@ -12,6 +12,7 @@ export const darkTheme = {
   imageBehindHeader:
     "https://img.freepik.com/premium-vector/cute-small-black-checkers-gingham-plaid-checkerboard-with-cute-little-white-heart-background-illustration-perfect-banner-wallpaper-backdrop-postcard-background_565280-845.jpg",
   imageBehindFilms: "https://wallpapercave.com/wp/wp6498726.jpg",
+  ratingIconColor: "#00c6ff",
 
   textSizeTitle: "25px",
   textSizeTitle900: "22px",
@@ -49,6 +50,7 @@ export const lightTheme = {
     "https://wallpapers.com/images/hd/pastel-cute-background-gnzi7pcq1sm9vpxk.jpg",
   imageBehindFilms:
     "https://wallpapers.com/images/hd/pastel-cute-background-gnzi7pcq1sm9vpxk.jpg",
+  ratingIconColor: "#FAFAFA",
 
   textSizeTitle: "25px",
   textSizeTitle100: "8px",

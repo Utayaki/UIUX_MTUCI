@@ -62,16 +62,25 @@ const Film: React.FC<MovieList> = (props) => {
               ) : (
                 ""
               )}
-
-              <Style.Details>Learn More</Style.Details>
             </Style.Card2>
           </Style.Cards>
           <Style.TextContainer>
             <Style.Text2>{props.language}</Style.Text2>
-
             <Style.IconContrainer>
-              <GrAed />
+              <GrAed color="red" />
             </Style.IconContrainer>
+
+            <div>
+              {/* Workaround for GR icons coloring */}
+              <style>
+                {`
+                svg path {
+                  stroke: red
+                }
+                `}
+              </style>
+              <GrAed color="red" size="xlarge" />
+            </div>
 
             <Style.Text1>{props.year}</Style.Text1>
           </Style.TextContainer>
