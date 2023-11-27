@@ -8,7 +8,7 @@ export const darkTheme = {
   accentColor1: `rgb(106,192,69)`,
   accentColor2: "#00c6ff",
   shadowColor: "rgba(0,0,0,0.2)",
-  buttonTopColor: "#002415",
+  buttonTopColor: "#000000",
   imageBehindHeader:
     "https://img.freepik.com/premium-vector/cute-small-black-checkers-gingham-plaid-checkerboard-with-cute-little-white-heart-background-illustration-perfect-banner-wallpaper-backdrop-postcard-background_565280-845.jpg",
   imageBehindFilms: "https://wallpapercave.com/wp/wp6498726.jpg",

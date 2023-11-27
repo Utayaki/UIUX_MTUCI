@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { VscStarFull, VscStarHalf } from "react-icons/vsc";
 import * as Style from "./index.styled";
+import { GrAed } from "react-icons/gr";
 
 const Film: React.FC<MovieList> = (props) => {
   const stars = [];
@@ -17,6 +18,7 @@ const Film: React.FC<MovieList> = (props) => {
     <Style.Film>
       <Link href={`/films/${props.id}`}>
         <Style.Content>
+          <Style.Text3>{props.title}</Style.Text3>
           <Style.Cards>
             <Style.Card1
               src={
@@ -61,15 +63,18 @@ const Film: React.FC<MovieList> = (props) => {
                 ""
               )}
 
-              <Style.Details>DETAILS</Style.Details>
+              <Style.Details>Learn More</Style.Details>
             </Style.Card2>
           </Style.Cards>
+          <Style.TextContainer>
+            <Style.Text2>{props.language}</Style.Text2>
 
-          <Style.Name>{props.title}</Style.Name>
+            <Style.IconContrainer>
+              <GrAed />
+            </Style.IconContrainer>
 
-          <Style.Text>
-            {props.year} {props.language}
-          </Style.Text>
+            <Style.Text1>{props.year}</Style.Text1>
+          </Style.TextContainer>
         </Style.Content>
       </Link>
     </Style.Film>

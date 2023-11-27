@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = (props) => {
           <Style.Img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Gregory_and_watermelon.jpg"></Style.Img>
         </Style.Logo>
 
-        <Style.Name style={{ textAlign: "center" }}>
+        <Style.Name style={{ textAlign: "right" }}>
           {" Big Floppa's Favorite Films Collection"}
         </Style.Name>
 

@@ -65,11 +65,10 @@ export const Img = styled.img`
 `;
 export const Name = styled.span`
   display: flex;
-  align-items: center;
-  font-size: ${(props) => props.theme.textSizeTextM};
+  font-size: 50px;
   font-weight: 500;
   font-family: Roboto;
-  letter-spacing: 1px;
+  letter-spacing: 10px;
   margin: 5px 0px 0px 0px;
   @media (max-width: 768px) and (min-width: 576px) {
     font-size: ${(props) => props.theme.textSizeTextM500};
