@@ -45,7 +45,7 @@ export const Content = styled.div`
     width: 100%;
   }
   @media (max-width: 576px) {
-    width: 100%;
+    width: 80%;
   }
 `;
 
@@ -62,6 +62,10 @@ export const Img = styled.img`
   display: flex;
   align-items: center;
   height: 230px;
+
+  @media (max-width: 500px) {
+    height: 110px;
+  }
 `;
 export const Name = styled.span`
   display: flex;
@@ -74,7 +78,9 @@ export const Name = styled.span`
     font-size: ${(props) => props.theme.textSizeTextM500};
   }
   @media (max-width: 576px) {
-    font-size: ${(props) => props.theme.textSizeTextM500};
+    font-size: 12px;
+
+    letter-spacing: 0px;
   }
 `;
 

@@ -8,6 +8,9 @@ export const Films = styled.section`
   justify-content: center;
   background-color: ${(props) => props.theme.bachgroundColor};
   transition: 0.1s;
+  @media (max-width: 576px) {
+    font-size: 7px;
+  }
 `;
 
 export const Content = styled.div`
@@ -37,7 +40,7 @@ export const Content = styled.div`
   @media (max-width: 576px) {
     padding: 0px 20px;
     margin: 0px 0px;
-    width: 100%;
+    width: 70%;
   }
 `;
 
@@ -54,8 +57,11 @@ export const Title = styled.span`
   @media (max-width: 768px) and (min-width: 576px) {
     font-size: ${(props) => props.theme.textSizeTitle700};
   }
-  @media (max-width: 576px) {
+  @media (max-width: 576px) and (min-width: 400px) {
     font-size: ${(props) => props.theme.textSizeTitle500};
+  }
+  @media (max-width: 400px) {
+    font-size: 10px;
   }
 `;
 
@@ -79,10 +85,11 @@ export const List = styled.div`
   @media (max-width: 992px) and (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  @media (max-width: 768px) and (min-width: 576px) {
+  @media (max-width: 768px) and (min-width: 600px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media (max-width: 576px) {
-    grid-template-columns: 1fr 1fr;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    font-size: 7px;
   }
 `;

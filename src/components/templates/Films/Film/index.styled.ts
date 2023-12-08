@@ -17,6 +17,10 @@ export const Card2 = styled.div`
   transition: 0.3s;
   padding: 20px;
   color: white;
+
+  @media (max-width: 500px) {
+    aspect-ratio: 1/1/2;
+  }
 `;
 
 export const Rating = styled.div`
@@ -132,6 +136,10 @@ export const Card1 = styled.img`
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   align-items: center;
+
+  @media (max-width: 400px) {
+    aspect-ratio: 1/1/10;
+  }
 `;
 
 export const Name = styled.div`
@@ -153,8 +161,12 @@ export const Name = styled.div`
   @media (max-width: 768px) and (min-width: 576px) {
     font-size: ${(props) => props.theme.textSizeTextM700};
   }
-  @media (max-width: 576px) {
+  @media (max-width: 576px) and (min-width 400px) {
     font-size: ${(props) => props.theme.textSizeTextM500};
+  }
+
+  @media (max-width: 400px) {
+    font-size: 10px;
   }
 `;
 
@@ -170,6 +182,10 @@ export const Text = styled.div`
   width: 100%;
   font-weight: 600;
   font-size: ${(props) => props.theme.textSizeTextS};
+
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
 `;
 
 export const Text1 = styled.div`
@@ -188,6 +204,10 @@ export const Text1 = styled.div`
   text-transform: uppercase;
   box-sizing: border-box;
   color: #000000;
+
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
 `;
 export const Text2 = styled.div`
   text-align: center;
@@ -204,6 +224,10 @@ export const Text2 = styled.div`
   text-transform: uppercase;
   box-sizing: border-box;
   color: #000000;
+
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
 `;
 
 export const Text3 = styled.div`
@@ -224,6 +248,10 @@ export const Text3 = styled.div`
   text-transform: uppercase;
   box-sizing: border-box;
   color: #000000;
+
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
 `;
 
 export const TextContainer = styled.div`
