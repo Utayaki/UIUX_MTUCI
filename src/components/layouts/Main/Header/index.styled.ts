@@ -72,14 +72,12 @@ export const Name = styled.span`
   font-size: 50px;
   font-weight: 500;
   font-family: Roboto;
-  letter-spacing: 10px;
   margin: 5px 0px 0px 0px;
   @media (max-width: 768px) and (min-width: 576px) {
     font-size: ${(props) => props.theme.textSizeTextM500};
   }
   @media (max-width: 576px) {
     font-size: 12px;
-
     letter-spacing: 0px;
   }
 `;

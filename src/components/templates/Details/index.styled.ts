@@ -47,15 +47,17 @@ export const ContentTitle = styled.span`
   display: flex;
   flex: 0 0 auto;
   width: 100%;
-  margin: 200px 400px;
+  margin: 50px 100px;
   align-items: center;
-  box-sizing: border-box;
-  font-size: ${(props) => props.theme.textSizeTitle};
+  font-size: 50px;
   @media (max-width: 768px) and (min-width: 576px) {
-    font-size: ${(props) => props.theme.textSizeTitle700};
+    font-size: 30px;
+    letter-spacing: 0px;
   }
   @media (max-width: 576px) {
-    font-size: ${(props) => props.theme.textSizeTitle500};
+    font-size: 20px;
+    letter-spacing: 0px;
+    margin: 50px 70px;
   }
   & a {
     font-family: Roboto;
@@ -65,7 +67,7 @@ export const ContentTitle = styled.span`
     transition: 0.3s;
     &:hover {
       transition: 0.3s;
-      color: ${(props) => props.theme.accentColor1};
+      color: ${(props) => props.theme.textColor};
     }
   }
 `;
@@ -139,7 +141,7 @@ export const Button = styled.a`
   height: 40px;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: ${(props) => props.theme.textColor};
   background-color: aqua;
   border: 0px;
   border-radius: 10px;
@@ -149,10 +151,10 @@ export const Button = styled.a`
   }
 `;
 export const DownloadButton = styled(Button)`
-  background-color: ${(props) => props.theme.accentColor1};
+  background-color: ${(props) => props.theme.iconColor};
 `;
 export const WatchButton = styled(Button)`
-  background-color: ${(props) => props.theme.accentColor2};
+  background-color: ${(props) => props.theme.iconColor};
 `;
 
 export const Description = styled.div`

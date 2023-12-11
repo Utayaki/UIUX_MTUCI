@@ -13,7 +13,7 @@ export const Torrent = styled.a`
   &:hover {
     color: white;
     transition: 0.3s;
-    background-color: ${(props) => props.theme.accentColor1};
+    background-color: red;
   }
 `;
 export const Content = styled.div`

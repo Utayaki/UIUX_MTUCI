@@ -144,12 +144,8 @@ const Details = () => {
         <Style.ContentTitle>
           {filmRetrieve?.data.movie.title}
         </Style.ContentTitle>
-
         <Style.Data>
           <Style.Image>
-            <Style.Img
-              src={filmRetrieve?.data.movie.large_cover_image}
-            ></Style.Img>
             <Style.Buttons>
               <Style.DownloadButton href={filmRetrieve?.data.movie.url}>
                 Download
@@ -158,6 +154,9 @@ const Details = () => {
                 Watch Now
               </Style.WatchButton>
             </Style.Buttons>
+            <Style.Img
+              src={filmRetrieve?.data.movie.large_cover_image}
+            ></Style.Img>
           </Style.Image>
 
           <Style.Description>
