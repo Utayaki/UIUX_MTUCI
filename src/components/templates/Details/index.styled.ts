@@ -181,9 +181,17 @@ export const Title = styled.div`
 
 export const Year = styled.div`
   display: flex;
-  width: 100%;
+  width: 96%;
   flex: 0 0 auto;
   font-weight: 600;
+  margin-bottom: 50px;
+  background-color: ${(props) => props.theme.iconColor};
+  box-shadow: 0px 0px 5px ${(props) => props.theme.shadowColor};
+  border-radius: 20px;
+  padding: 8px 20px 8px 20px;
+  align-items: center;
+  justify-content: center;
+
   font-size: ${(props) => props.theme.textSizeTextL};
   color: ${(props) => props.theme.textColor};
 `;

@@ -148,11 +148,7 @@ const Details = () => {
             " " +
             filmRetrieve?.data.movie.language}
         </Style.ContentTitle>
-        <Style.Year>
-          {filmRetrieve?.data.movie.year +
-            " " +
-            filmRetrieve?.data.movie.language}
-        </Style.Year>
+        <Style.Year>{filmRetrieve?.data.movie.description_full}</Style.Year>
         <Style.Buttons>
           <Style.DownloadButton href={filmRetrieve?.data.movie.url}>
             Download
@@ -183,10 +179,6 @@ const Details = () => {
         </Style.Statistic>
         <Style.Data>
           <Style.Description>
-            <Style.DescriptionFull>
-              {filmRetrieve?.data.movie.description_full}
-            </Style.DescriptionFull>
-
             <Style.Genres>{genresList}</Style.Genres>
           </Style.Description>
         </Style.Data>
