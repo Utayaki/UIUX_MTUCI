@@ -9,6 +9,12 @@ export const CommentItem = styled.div`
   height: 100px;
   background-color: ${(props) => props.theme.iconColor};
   box-shadow: 0px 2px 5px ${(props) => props.theme.shadowColor};
+  @media (max-width: 1008px) and (min-width: 576px) {
+    height: 30px;
+  }
+  @media (max-width: 576px) {
+    height: 30px;
+  }
 `;
 
 export const CommentText = styled.div`
@@ -24,12 +30,24 @@ export const CommentText = styled.div`
   @media (max-width: 576px) {
     font-size: ${(props) => props.theme.textSizeTextM500};
   }
+  @media (max-width: 1008px) and (min-width: 576px) {
+    height: 30px;
+  }
+  @media (max-width: 576px) {
+    height: 30px;
+  }
 `;
 
 export const CommentContent = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 10px;
+  @media (max-width: 1008px) and (min-width: 576px) {
+    height: 30px;
+  }
+  @media (max-width: 576px) {
+    height: 30px;
+  }
 `;
 
 export const UserName = styled.div`
@@ -50,6 +68,13 @@ export const UserName = styled.div`
         font-weight: bold; 
         padding:0px 3px 0px 3px;
     }
+    @media (max-width: 1008px) and (min-width: 576px) {
+    height: 30px;
+  }
+  @media (max-width: 576px) {
+    height: 30px;
+  }
+
 `;
 
 export const deleteButton = styled.div`

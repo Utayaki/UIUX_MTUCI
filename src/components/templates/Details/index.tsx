@@ -142,60 +142,58 @@ const Details = () => {
       ></Style.BackgroundImage>
       <Style.Content>
         <Style.ContentTitle>
-          {filmRetrieve?.data.movie.title}
+          {filmRetrieve?.data.movie.title +
+            "/" +
+            filmRetrieve?.data.movie.year +
+            " " +
+            filmRetrieve?.data.movie.language}
         </Style.ContentTitle>
+        <Style.Year>
+          {filmRetrieve?.data.movie.year +
+            " " +
+            filmRetrieve?.data.movie.language}
+        </Style.Year>
+        <Style.Buttons>
+          <Style.DownloadButton href={filmRetrieve?.data.movie.url}>
+            Download
+          </Style.DownloadButton>
+          <Style.WatchButton href={filmRetrieve?.data.movie.url}>
+            Watch Now
+          </Style.WatchButton>
+        </Style.Buttons>
+
+        <Style.Image>
+          <Style.Img
+            src={filmRetrieve?.data.movie.large_cover_image}
+          ></Style.Img>
+        </Style.Image>
+        <Style.Statistic>
+          <StatisticItem
+            icon={<VscStarFull color="red" />}
+            text={filmRetrieve?.data.movie.rating}
+          ></StatisticItem>
+          <StatisticItem
+            icon={<AiTwotoneLike color="red" />}
+            text={filmRetrieve?.data.movie.like_count}
+          ></StatisticItem>
+          <StatisticItem
+            icon={<BiTimeFive color="red" />}
+            text={filmRetrieve?.data.movie.runtime}
+          ></StatisticItem>
+        </Style.Statistic>
         <Style.Data>
-          <Style.Image>
-            <Style.Buttons>
-              <Style.DownloadButton href={filmRetrieve?.data.movie.url}>
-                Download
-              </Style.DownloadButton>
-              <Style.WatchButton href={filmRetrieve?.data.movie.url}>
-                Watch Now
-              </Style.WatchButton>
-            </Style.Buttons>
-            <Style.Img
-              src={filmRetrieve?.data.movie.large_cover_image}
-            ></Style.Img>
-          </Style.Image>
-
           <Style.Description>
-            <Style.Year>
-              {filmRetrieve?.data.movie.year +
-                " " +
-                filmRetrieve?.data.movie.language}
-            </Style.Year>
-
-            <Style.Genres>{genresList}</Style.Genres>
-
             <Style.DescriptionFull>
               {filmRetrieve?.data.movie.description_full}
             </Style.DescriptionFull>
 
-            <Style.Statistic>
-              <StatisticItem
-                icon={<VscStarFull />}
-                text={filmRetrieve?.data.movie.rating}
-              ></StatisticItem>
-              <StatisticItem
-                icon={<AiTwotoneLike />}
-                text={filmRetrieve?.data.movie.like_count}
-              ></StatisticItem>
-              <StatisticItem
-                icon={<BiTimeFive />}
-                text={filmRetrieve?.data.movie.runtime}
-              ></StatisticItem>
-              <StatisticItem
-                icon={<VscDesktopDownload />}
-                text={filmRetrieve?.data.movie.download_count}
-              ></StatisticItem>
-            </Style.Statistic>
-
-            <Style.TorrentsTitle>Downloads:</Style.TorrentsTitle>
-
-            <Style.Torrents>{torrentsList}</Style.Torrents>
+            <Style.Genres>{genresList}</Style.Genres>
           </Style.Description>
         </Style.Data>
+        <Style.TorrentsTitle>Downloads:</Style.TorrentsTitle>
+
+        <Style.Torrents>{torrentsList}</Style.Torrents>
+
         <Style.UserCommentsText>User Comments</Style.UserCommentsText>
         <Style.CommentItem>{commentsList()}</Style.CommentItem>
       </Style.Content>

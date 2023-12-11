@@ -73,11 +73,11 @@ export const ContentTitle = styled.span`
 `;
 
 export const Data = styled.div`
-  display: grid;
+  display: flex;
   width: 100%;
   align-items: center;
   align-self: center;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.5fr 2fr;
   grid-gap: 20px;
   border-top: 1px solid ${(props) => props.theme.accentColor1};
   border-bottom: 1px solid ${(props) => props.theme.accentColor1};
@@ -102,17 +102,19 @@ export const BackgroundImage = styled.img`
   width: 100%;
   height: 600px;
   object-fit: cover;
-  opacity: 0.3;
+  opacity: 0.7;
 `;
 
 export const Image = styled.div`
   display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  align-items: center;
+  align-self: center;
+  margin: 50px 0px 50px 0px;
 `;
 export const Img = styled.img`
-  aspect-ratio: 1/1/5;
+  aspect-ratio: 1/1/10;
   display: flex;
   width: 100%;
   object-fit: cover;
@@ -123,7 +125,7 @@ export const Img = styled.img`
 `;
 
 export const Buttons = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   @media (max-width: 768px) and (min-width: 576px) {
@@ -158,12 +160,14 @@ export const WatchButton = styled(Button)`
 `;
 
 export const Description = styled.div`
-  display: grid;
-  align-self: flex-start;
+  display: flex-grip;
   align-items: center;
-  justify-content: bottom;
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
+  display: block;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 50px;
+  height: 100px;
 `;
 
 export const Title = styled.div`
@@ -185,32 +189,32 @@ export const Year = styled.div`
 `;
 export const DescriptionFull = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-size: ${(props) => props.theme.textSizeTextM};
   line-height: 25px;
   letter-spacing: 1px;
 `;
 export const Genres = styled.div`
-  display: grid;
+  display: flex;
   font-size: ${(props) => props.theme.textSizeTextM};
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 10px;
-  @media (max-width: 768px) and (min-width: 576px) {
-    grid-template-columns: 1fr;
-  }
-  @media (max-width: 576px) {
-    grid-template-columns: 1fr;
+  grid-gap: 10%;
   }
 `;
 
 export const Statistic = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 20px;
-  @media (max-width: 768px) and (min-width: 576px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 300px;
+  @media (max-width: 1008px) and (min-width: 576px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 150px;
   }
   @media (max-width: 576px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
   }
 `;
 export const TorrentsTitle = styled.div`
@@ -218,12 +222,13 @@ export const TorrentsTitle = styled.div`
   width: 100%;
   flex: 0 0 auto;
   font-weight: 600;
+  margin-top: 10px;
   font-size: ${(props) => props.theme.textSizeTextL};
   color: ${(props) => props.theme.textColor};
 `;
 
 export const Torrents = styled.div`
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr;
   grid-gap: 10px;
 `;
