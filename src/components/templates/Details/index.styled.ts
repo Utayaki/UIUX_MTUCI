@@ -47,7 +47,7 @@ export const ContentTitle = styled.span`
   display: flex;
   flex: 0 0 auto;
   width: 100%;
-  margin: 200px 0px;
+  margin: 200px 400px;
   align-items: center;
   box-sizing: border-box;
   font-size: ${(props) => props.theme.textSizeTitle};

@@ -142,7 +142,7 @@ const Details = () => {
       ></Style.BackgroundImage>
       <Style.Content>
         <Style.ContentTitle>
-          <Link href={"/"}>Films / {filmRetrieve?.data.movie.title}</Link>
+          {filmRetrieve?.data.movie.title}
         </Style.ContentTitle>
 
         <Style.Data>
@@ -161,8 +161,6 @@ const Details = () => {
           </Style.Image>
 
           <Style.Description>
-            <Style.Title>{filmRetrieve?.data.movie.title}</Style.Title>
-
             <Style.Year>
               {filmRetrieve?.data.movie.year +
                 " " +
