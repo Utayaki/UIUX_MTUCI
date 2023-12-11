@@ -19,7 +19,7 @@ export const Pagination = styled.div`
     min-height: 40px;
     flex: 0 0 auto;
     justify-content: center;
-    background-color: ${(props) => props.theme.bachgroundColor};
+    background-color: ${(props) => props.theme.buttonTopColor};
     transition: 0.1s;
     margin: 20px 0px;
   }
@@ -55,6 +55,7 @@ export const Item = styled.div`
     justify-content: center;
     align-items: center;
     background-color: ${(props) => props.theme.paginationColor};
+    color: red;
     font-weight: 500;
     font-size: ${(props) => props.theme.textSizeTextM};
     height: 100%;
@@ -65,7 +66,7 @@ export const Item = styled.div`
     transition: 0.1s;
     &:hover {
       transition: 0.1s;
-      background-color: ${(props) => props.theme.accentColor1};
+      background-color: ${(props) => props.theme.buttonTopColor};
     }
     margin: 10px 500px -100px 500px;
   }
@@ -88,7 +89,7 @@ export const Item = styled.div`
     &:hover {
       transition: 0.1s;
       color: white;
-      background-color: ${(props) => props.theme.accentColor1};
+      background-color: ${(props) => props.theme.buttonTopColor};
     }
     margin: 0px 10px 0px 0px;
     &:last-child {
@@ -98,5 +99,5 @@ export const Item = styled.div`
 `;
 
 export const ActiveItem = styled(Item)`
-  background-color: ${(props) => props.theme.accentColor1};
+  background-color: white;
 `;
